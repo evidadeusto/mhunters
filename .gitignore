@@ -68,3 +68,4 @@ target/
 *.xlsx
 *.csv.bz2
 *.pyc
+*.h5
