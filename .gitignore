@@ -69,3 +69,4 @@ target/
 *.csv.bz2
 *.pyc
 *.h5
+*.txt

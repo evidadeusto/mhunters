@@ -33,7 +33,7 @@ class Data_cleaning():
         def switch(case):
             if case == 'int_cols':
                 print('converting int_cols')
-                self.df[columns['int_cols']] = self.df[columns['int_cols']].astype('Int32', errors='ignore')
+                self.df[columns['int_cols']] = self.df[columns['int_cols']].apply(pd.to_numeric, errors='ignore')
                 #self.df['difficulty_feedback'] = self.df['difficulty_feedback'].astype('Int32')
             elif case == 'float_cols':
                 print('converting float_cols')
